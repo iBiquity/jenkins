@@ -3,6 +3,8 @@ node {
     agent any
 
     stage('Hello') {
-        echo 'test: hello world'
+        steps {
+            echo 'Hello from Jenkins Pipeline!'
+        }
     }
 }
