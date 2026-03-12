@@ -2,9 +2,11 @@ node {
 
     agent any
 
-    stage('Hello') {
-        steps {
-            echo 'Hello from Jenkins Pipeline!'
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello from Jenkins Pipeline!'
+            }
         }
     }
 }
