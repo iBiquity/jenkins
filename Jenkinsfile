@@ -1,5 +1,7 @@
 node {
-    agent $platform
+    agent {
+       label "$platform"
+    }
     stage('Hello') {
         echo 'hello world'
     }
