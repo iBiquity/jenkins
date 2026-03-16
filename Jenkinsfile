@@ -1,10 +1,13 @@
 pipeline {
-    agent {
-       label "$platform"
-    }
-    stages {
-            stage('Hello') {
-                echo 'hello world'
+    agent any
+    stages{
+        stage("setup lambda"){
+            agent {
+                label "${platform}"
+            }
+            steps {
+                echo "Setup lambda"
+            }
         }
     }
 }
