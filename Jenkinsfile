@@ -1,8 +1,10 @@
-node {
+pipeline {
     agent {
        label "$platform"
     }
-    stage('Hello') {
-        echo 'hello world'
+    stages {
+            stage('Hello') {
+                echo 'hello world'
+        }
     }
 }
